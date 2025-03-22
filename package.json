@@ -7,6 +7,7 @@
     "tgpt": "node lib/src/index.js",
     "test": "jest --ci --coverage --verbose",
     "dev": "ts-node src/index.ts chat  --temperature 0.7",
+    "dev:one-shot": "ts-node src/index.ts one-shot 'explain what is REST API, 使用中文回复' ",
     "dev:delete": "ts-node src/index.ts delete",
     "build": "tsc && chmod +x lib/src/index.js",
     "postinstall": "npm run build"

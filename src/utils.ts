@@ -136,6 +136,7 @@ export const promptResponse = async (
   userInput: string,
   opts: any
 ): Promise<void> => {
+
   try {
     const request = await generateResponse(
       engine,
